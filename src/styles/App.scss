@@ -1,0 +1,39 @@
+$base: #FFFFCC;
+$header-font: 'Work Sans';
+$shadow: 0 0 15px 5px #00000010;
+
+@import './mixins';
+
+
+
+body {
+  width: 100%;
+  font-family: $header-font, 'sans-serif';
+  overflow-y: scroll;
+  text-align: center;
+  background-color: #fff;
+}
+
+main {
+  margin-top: 150px;
+  position: relative;
+  z-index: 50;
+}
+
+.hover-pointer, .bi {
+  cursor: pointer
+}
+
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block;
+}
+
+
+@import './navbar';
+@import './productsList';
+@import './productItem';
